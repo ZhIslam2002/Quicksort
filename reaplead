@@ -1,0 +1,9 @@
+lgorithm partition(A, low, high) is
+    pivot := A[high]
+    i := low
+    for j := low to high - 1 do
+        if A[j] ≤ pivot then
+            swap A[i] with A[j]
+            i := i + 1
+    swap A[i] with A[high]
+    return i
